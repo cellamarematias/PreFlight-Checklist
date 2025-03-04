@@ -1,0 +1,990 @@
+{
+    "aircrafts": [
+      {
+        "id": 1,
+        "aircraft_name": "Tecnam P2002 LV - S028",
+        "checklist": [
+          {
+            "id": 1,
+            "order": 1.0,
+            "description": "BEFORE START (ANTES DE LA PUESTA EN MARCHA)",
+            "action": "",
+            "is_section": true
+          },
+          {
+            "id": 2,
+            "order": 2.0,
+            "description": "PARKING BRAKE (FRENO DE ESTACIONAMIENTO)",
+            "action": "LOCK",
+            "is_section": false
+          },
+          {
+            "id": 3,
+            "order": 3.0,
+            "description": "FLIGHT CONTROLS (CONTROLES DE VUELO)",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 4,
+            "order": 4.0,
+            "description": "CIRCUITE BREAKERS (FUSIBLES)",
+            "action": "ALL IN",
+            "is_section": false
+          },
+          {
+            "id": 5,
+            "order": 5.0,
+            "description": "MASTER SWITCH",
+            "action": "ON",
+            "is_section": false
+          },
+          {
+            "id": 6,
+            "order": 6.0,
+            "description": "GENERATOR LIGHT (LUZ DE GENERADOR) (ALT)",
+            "action": "ON",
+            "is_section": false
+          },
+          {
+            "id": 7,
+            "order": 7.0,
+            "description": "EFIS (ELECTRONIC FLIGHT INSTRUMENT SYSTEM)",
+            "action": "ON",
+            "is_section": false
+          },
+          {
+            "id": 8,
+            "order": 8.0,
+            "description": "TRIM SWITCH (SWITCH DE TRIM)",
+            "action": "LEFT",
+            "is_section": false
+          },
+          {
+            "id": 9,
+            "order": 9.0,
+            "description": "TRIM CONTROL (INDICADOR DE TRIM)",
+            "action": "CENTER",
+            "is_section": false
+          },
+          {
+            "id": 10,
+            "order": 10.0,
+            "description": "FUEL QUANTITY (CANTDAD DE COMBUSTIBLE)",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 11,
+            "order": 11.0,
+            "description": "STARTING ENGINE (PUESTA EN MARCHA)",
+            "action": "CHECK",
+            "is_section": true
+          },
+          {
+            "id": 12,
+            "order": 12.0,
+            "description": "BRAKES (FRENOS)",
+            "action": "APPLY",
+            "is_section": false
+          },
+          {
+            "id": 13,
+            "order": 13.0,
+            "description": "FUEL SELECTOR VALVES (SELECTOR DE TANQUE)",
+            "action": "FULLEST",
+            "is_section": false
+          },
+          {
+            "id": 14,
+            "order": 14.0,
+            "description": "FUEL PUMP (BOMBA DE COMBUSTIBLE)",
+            "action": "ON",
+            "is_section": false
+          },
+          {
+            "id": 15,
+            "order": 15.0,
+            "description": "THROTTLE (ACELERADOR)",
+            "action": "IDLE",
+            "is_section": false
+          },
+          {
+            "id": 16,
+            "order": 16.0,
+            "description": "CHOKE (CEBADOR) (SI ES NECESARIO)",
+            "action": "AS NEEDED",
+            "is_section": false
+          },
+          {
+            "id": 17,
+            "order": 17.0,
+            "description": "PROPELLER AREA (AREA DE HELICE)",
+            "action": "CLEAR",
+            "is_section": false
+          },
+          {
+            "id": 18,
+            "order": 18.0,
+            "description": "STROBE LIGHT (LUCES ESTROBOSCOPICAS)",
+            "action": "START",
+            "is_section": false
+          },
+          {
+            "id": 19,
+            "order": 29.0,
+            "description": "OIL PRESSURE (PRESION DE ACEITE)",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 20,
+            "order": 20.0,
+            "description": "ENGINE INSTRUMENTS (INSTRUMENTOS DE MOTOR)",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 21,
+            "order": 21.0,
+            "description": "CHOKE (CEBADOR)",
+            "action": "OFF",
+            "is_section": false
+          },
+          {
+            "id": 22,
+            "order": 22.0,
+            "description": "THROTTLE (ACELERADOR)",
+            "action": "2000-2500 RPM",
+            "is_section": false
+          },
+          {
+            "id": 23,
+            "order": 23.0,
+            "description": "FUEL PUMP (BOMBA DE COMBUSTIBLE)",
+            "action": "OFF",
+            "is_section": false
+          },
+          {
+            "id": 24,
+            "order": 24.0,
+            "description": "FUEL PRESSURE (PRESION DE COMBUSTIBLE)",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 25,
+            "order": 25.0,
+            "description": "BEFORE TAXI (ANTES DEL RODAJE)",
+            "action": "CHECK",
+            "is_section": true
+          },
+          {
+            "id": 26,
+            "order": 26.0,
+            "description": "SEAT POSITION AND SAFETY BELTS ADJUST & FASTEN (ASIENTOS Y CINTURONES)",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 27,
+            "order": 27.0,
+            "description": "AVIONICS SWITCH (SWITCH DE AVIONICA)",
+            "action": "ON",
+            "is_section": false
+          },
+          {
+            "id": 28,
+            "order": 28.0,
+            "description": "RADIO (CONTRLAR FRECUENCIA Y VOLUMEN)",
+            "action": "ON",
+            "is_section": false
+          },
+          {
+            "id": 29,
+            "order": 29.0,
+            "description": "ATTITUDE INDICATOR (HORIZONTE ARTIFICIAL)",
+            "action": "ALIGN",
+            "is_section": false
+          },
+          {
+            "id": 30,
+            "order": 30.0,
+            "description": "ALTIMETERS (ALTIMETROS)",
+            "action": "SET",
+            "is_section": false
+          },
+          {
+            "id": 31,
+            "order": 31.0,
+            "description": "PARKING BRAKE (FRENO DE ESTACIONAMIENTO)",
+            "action": "RELEASE",
+            "is_section": false
+          },
+          {
+            "id": 32,
+            "order": 32.0,
+            "description": "TAXI (RODAJE) CHECK",
+            "action": "CHECK",
+            "is_section": true
+          },
+          {
+            "id": 33,
+            "order": 33.0,
+            "description": "BRAKES (FRENOS)",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 34,
+            "order": 34.0,
+            "description": "FLIGHT INSTRUMENTS (INSTRUMENTOS DE VUELO)",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 35,
+            "order": 35.0,
+            "description": "BEFORE TAKE OFF (ANTES DEL DESPEGUE)",
+            "action": "CHECK",
+            "is_section": true
+          },
+          {
+            "id": 36,
+            "order": 36.0,
+            "description": "PARKING BRAKE (FRENO DE ESTACIONAMIENTO)",
+            "action": "LOCK",
+            "is_section": false
+          },
+          {
+            "id": 37,
+            "order": 37.0,
+            "description": "GENERATOR LIGHT (LUZ DE ALTERNADOR)",
+            "action": "OFF",
+            "is_section": false
+          },
+          {
+            "id": 38,
+            "order": 38.0,
+            "description": "ENGINE INSTRUMENTS (INSTRUMENTOS DE MOTOR) OIL TEMPERATURE (TEMP. DE ACEITE DEBE SER +50C ANTES DEL DESPEGUE)",
+            "action": "GREEN ARC",
+            "is_section": false
+          },
+          {
+            "id": 39,
+            "order": 39.0,
+            "description": "CILINDER HEAD TEMPERATURE (TEMPERATURA DE CABEZA DE CILINDRO)",
+            "action": "GREEN ARC",
+            "is_section": false
+          },
+          {
+            "id": 40,
+            "order": 40.0,
+            "description": "OIL PRESSURE (PRESION DE ACEITE)",
+            "action": "GREEN ARC",
+            "is_section": false
+          },
+          {
+            "id": 41,
+            "order": 41.0,
+            "description": "FUEL PRESSURE (PRESION DE COMBUSTIBLE)",
+            "action": "GREEN ARC",
+            "is_section": false
+          },
+          {
+            "id": 42,
+            "order": 42.0,
+            "description": "IGNITION SYSTEM TEST (PRUEBA DE MOTOR)",
+            "action": "CHECK",
+            "is_section": true
+          },
+          {
+            "id": 43,
+            "order": 43.0,
+            "description": "BRAKES (FRENOS)",
+            "action": "APPLY",
+            "is_section": false
+          },
+          {
+            "id": 44,
+            "order": 44.0,
+            "description": "THROTTLE (ACELERADOR)",
+            "action": "4000 RPM",
+            "is_section": false
+          },
+          {
+            "id": 45,
+            "order": 45.0,
+            "description": "IGNITION SYSTEMS TEST",
+            "action": "CHECK (TEST DE IGNICION IZQUIERDO Y DERECHO)",
+            "is_section": false
+          },
+          {
+            "id": 46,
+            "order": 46.0,
+            "description": "MAX CAIDA CON UN SOLO IGNITOR 300 RPM",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 47,
+            "order": 47.0,
+            "description": "MAX DIFERENCIA ENTRE IGNITORES 120 RPM",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 48,
+            "order": 48.0,
+            "description": "FUEL SELECTOR VALVES (SELECTOR DE TANQUE)",
+            "action": "CHANGE",
+            "is_section": false
+          },
+          {
+            "id": 49,
+            "order": 49.0,
+            "description": "THROTTLE (ACELERADOR)",
+            "action": "2000-2500",
+            "is_section": false
+          },
+          {
+            "id": 50,
+            "order": 50.0,
+            "description": "FUEL QUANTITY (CANTIDAD DE COMBUSTIBLE)",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 51,
+            "order": 51.0,
+            "description": "FUEL PUMP (BOMBA DE COMBUSTIBLE)",
+            "action": "ON",
+            "is_section": false
+          },
+          {
+            "id": 52,
+            "order": 52.0,
+            "description": "FUEL SELECTOR VALVES FULLEST (SELECTOR DE TANQUES)",
+            "action": "MAS LLENO",
+            "is_section": false
+          },
+          {
+            "id": 53,
+            "order": 53.0,
+            "description": "FLAPS T/0-15",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 54,
+            "order": 54.0,
+            "description": "FLIGHT CONTROLS (CONTROLES DE VUELO)",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 55,
+            "order": 55.0,
+            "description": "TRIM CENTER",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 56,
+            "order": 56.0,
+            "description": "SEAT POSITION AND SAFETY BELTS ADJUST & FASTEN (ASIENTOS Y CINTURONES)",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 57,
+            "order": 57.0,
+            "description": "CANOPY (CABINA) CLOSED",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 58,
+            "order": 58.0,
+            "description": "NAVIGATION LIGHTS (LUCES DE NAVEGACION)",
+            "action": "ON",
+            "is_section": false
+          },
+          {
+            "id": 59,
+            "order": 59.0,
+            "description": "PARKING BRAKE (FRENO DE ESTACIONAMIENTO)",
+            "action": "RELEASE",
+            "is_section": false
+          },
+          {
+            "id": 60,
+            "order": 60.0,
+            "description": "BREAFING & LINE UP (INGRESO A PISTA)",
+            "action": "CHECK",
+            "is_section": true
+          },
+          {
+            "id": 61,
+            "order": 61.0,
+            "description": "AFTER LANDING (LUEGO DEL ATERRIZAJE)",
+            "action": "CHECK",
+            "is_section": true
+          },
+          {
+            "id": 62,
+            "order": 62.0,
+            "description": "FLAPS RETRACT",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 63,
+            "order": 63.0,
+            "description": "FUEL PUMP (BOMBA DE COMBUSTIBLE)",
+            "action": "OFF",
+            "is_section": false
+          },
+          {
+            "id": 64,
+            "order": 64.0,
+            "description": "ENGINE SHUT DOWN (APAGADO DEL MOTOR)",
+            "action": "CHECK",
+            "is_section": true
+          },
+          {
+            "id": 65,
+            "order": 65.0,
+            "description": "TRIM CENTER",
+            "action": "OFF",
+            "is_section": false
+          },
+          {
+            "id": 66,
+            "order": 66.0,
+            "description": "ELECTRICAL EQUIPMENT AND LIGHTS (EQUIPOS ELECTRICOS Y LUCES) (EXCEPTO LUCES ESTROBOCOPICAS)",
+            "action": "CHECK",
+            "is_section": true
+          },
+          {
+            "id": 67,
+            "order": 67.0,
+            "description": "EFIS (ELECTRONIC FLIGHT INSTRUMENT SYSTEM)",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 68,
+            "order": 68.0,
+            "description": "IGNITION SWITCHES (LLAVE DE IGNICION)",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 69,
+            "order": 69.0,
+            "description": "STROBE LIGHT(LUCES ESTROBOSCOPICAS)",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 70,
+            "order": 70.0,
+            "description": "MASTER SWITCH",
+            "action": "CHECK",
+            "is_section": false
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "aircraft_name": "AL3 LV - S147",
+        "checklist": [
+          {
+            "id": 71,
+            "order": 1.0,
+            "description": "-- BEFORE START (ANTES DE LA PUESTA EN MARCHA)",
+            "action": "CHECK",
+            "is_section": true
+          },
+          {
+            "id": 72,
+            "order": 1.01,
+            "description": "PARKING BRAKE (FRENO DE ESTACIONAMIENTO)",
+            "action": "LOCK",
+            "is_section": false
+          },
+          {
+            "id": 73,
+            "order": 2.0,
+            "description": "FLIGHT CONTROLS (CONTROLES DE VUELO)",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 74,
+            "order": 3.0,
+            "description": "CIRCUIT BREAKERS (FUSIBLES)",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 75,
+            "order": 4.0,
+            "description": "MASTER SWITCH",
+            "action": "ON",
+            "is_section": false
+          },
+          {
+            "id": 76,
+            "order": 5.0,
+            "description": "GENERATOR LIGHT (LUZ DE GENERADOR) (ALT)",
+            "action": "ON",
+            "is_section": false
+          },
+          {
+            "id": 77,
+            "order": 6.0,
+            "description": "EFIS (ELECTRONIC FLIGHT INSTRUMENT SYSTEM)",
+            "action": "ON",
+            "is_section": false
+          },
+          {
+            "id": 78,
+            "order": 7.0,
+            "description": "TRIM SWITCH (SWITCH DE TRIM)",
+            "action": "LEFT",
+            "is_section": false
+          },
+          {
+            "id": 79,
+            "order": 8.0,
+            "description": "TRIM CONTROL (INDICADOR DE TRIM)",
+            "action": "CENTER",
+            "is_section": false
+          },
+          {
+            "id": 80,
+            "order": 9.0,
+            "description": "FUEL QUANTITY (CANTIDAD DE COMBUSTIBLE)",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 81,
+            "order": 10.0,
+            "description": "-- STARTING ENGINE (PUESTA EN MARCHA)",
+            "action": "CHECK",
+            "is_section": true
+          },
+          {
+            "id": 82,
+            "order": 10.01,
+            "description": "BRAKES (FRENOS)",
+            "action": "APPLY",
+            "is_section": false
+          },
+          {
+            "id": 83,
+            "order": 11.0,
+            "description": "FUEL SELECTOR VALVES FULL (SELECTOR DE TANQUE)",
+            "action": "MAS LLENO",
+            "is_section": false
+          },
+          {
+            "id": 84,
+            "order": 12.0,
+            "description": "FUEL PUMP (BOMBA DE COMBUSTIBLE)",
+            "action": "ON",
+            "is_section": false
+          },
+          {
+            "id": 85,
+            "order": 13.0,
+            "description": "THROTTLE (ACELERADOR)",
+            "action": "IDLE",
+            "is_section": false
+          },
+          {
+            "id": 86,
+            "order": 14.0,
+            "description": "CHOKE (CEBADOR)",
+            "action": "AS NEEDED (SI ES NECESARIO)",
+            "is_section": false
+          },
+          {
+            "id": 87,
+            "order": 15.0,
+            "description": "PROPELLER AREA (AREA DE HÉLICE)",
+            "action": "CLEAR",
+            "is_section": false
+          },
+          {
+            "id": 88,
+            "order": 16.0,
+            "description": "STROBE LIGHT (LUCES ESTROBOSCÓPICAS)",
+            "action": "ON",
+            "is_section": false
+          },
+          {
+            "id": 89,
+            "order": 17.0,
+            "description": "OIL PRESSURE (PRESIÓN DE ACEITE)",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 90,
+            "order": 18.0,
+            "description": "ENGINE INSTRUMENTS (INSTRUMENTOS DE MOTOR)",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 91,
+            "order": 19.0,
+            "description": "CHOKE (CEBADOR)",
+            "action": "OFF",
+            "is_section": false
+          },
+          {
+            "id": 92,
+            "order": 20.0,
+            "description": "THROTTLE (ACELERADOR)",
+            "action": "2000-2500 RPM",
+            "is_section": false
+          },
+          {
+            "id": 93,
+            "order": 21.0,
+            "description": "FUEL PUMP (BOMBA DE COMBUSTIBLE)",
+            "action": "OFF",
+            "is_section": false
+          },
+          {
+            "id": 94,
+            "order": 22.0,
+            "description": "FUEL PRESSURE (PRESIÓN DE COMBUSTIBLE)",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 95,
+            "order": 23.0,
+            "description": "-- BEFORE TAXI (ANTES DEL RODAJE)",
+            "action": "CHECK",
+            "is_section": true
+          },
+          {
+            "id": 96,
+            "order": 23.01,
+            "description": "SEAT POSITION AND SAFETY BELTS ADJUST & FASTEN (ASIENTOS Y CINTURONES)",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 97,
+            "order": 24.0,
+            "description": "AVIONICS SWITCH (SWITCH DE AVIÓNICA)",
+            "action": "ON",
+            "is_section": false
+          },
+          {
+            "id": 98,
+            "order": 25.0,
+            "description": "RADIO (CONTROLAR FRECUENCIA Y VOLUMEN)",
+            "action": "ON",
+            "is_section": false
+          },
+          {
+            "id": 99,
+            "order": 26.0,
+            "description": "ATTITUDE INDICATOR (HORIZONTE ARTIFICIAL)",
+            "action": "ALIGN",
+            "is_section": false
+          },
+          {
+            "id": 100,
+            "order": 27.0,
+            "description": "ALTIMETERS (ALTÍMETROS)",
+            "action": "SET",
+            "is_section": false
+          },
+          {
+            "id": 101,
+            "order": 28.0,
+            "description": "PARKING BRAKE (FRENO DE ESTACIONAMIENTO)",
+            "action": "RELEASE",
+            "is_section": false
+          },
+          {
+            "id": 102,
+            "order": 29.0,
+            "description": "TAXI (RODAJE)",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 103,
+            "order": 30.0,
+            "description": "BRAKES (FRENOS)",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 104,
+            "order": 31.0,
+            "description": "FLIGHT INSTRUMENTS (INSTRUMENTOS DE VUELO)",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 105,
+            "order": 32.0,
+            "description": "-- BEFORE TAKE OFF (ANTES DEL DESPEGUE)",
+            "action": "CHECK",
+            "is_section": true
+          },
+          {
+            "id": 106,
+            "order": 32.01,
+            "description": "PARKING BRAKE (FRENO DE ESTACIONAMIENTO)",
+            "action": "LOCK",
+            "is_section": false
+          },
+          {
+            "id": 107,
+            "order": 33.0,
+            "description": "GENERATOR LIGHT (LUZ DE ALTERNADOR)",
+            "action": "OFF",
+            "is_section": false
+          },
+          {
+            "id": 108,
+            "order": 34.0,
+            "description": "ENGINE INSTRUMENTS (INSTRUMENTOS DE MOTOR)",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 109,
+            "order": 35.0,
+            "description": "OIL TEMPERATURE (TEMP. DE ACEITE) DEBE SER +50°C ANTES DEL DESPEGUE",
+            "action": "GREEN ARC",
+            "is_section": false
+          },
+          {
+            "id": 110,
+            "order": 36.0,
+            "description": "CYLINDER HEAD TEMPERATURE (TEMPERATURA DE CABEZA DE CILINDRO)",
+            "action": "GREEN ARC",
+            "is_section": false
+          },
+          {
+            "id": 111,
+            "order": 37.0,
+            "description": "OIL PRESSURE (PRESIÓN DE ACEITE)",
+            "action": "GREEN ARC",
+            "is_section": false
+          },
+          {
+            "id": 112,
+            "order": 38.0,
+            "description": "FUEL PRESSURE (PRESIÓN DE COMBUSTIBLE)",
+            "action": "GREEN ARC",
+            "is_section": false
+          },
+          {
+            "id": 113,
+            "order": 39.0,
+            "description": "IGNITION SYSTEM TEST (PRUEBA DE MOTOR)",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 114,
+            "order": 40.0,
+            "description": "BRAKES (FRENOS)",
+            "action": "APPLY",
+            "is_section": false
+          },
+          {
+            "id": 115,
+            "order": 41.0,
+            "description": "THROTTLE (ACELERADOR)",
+            "action": "4000 RPM",
+            "is_section": false
+          },
+          {
+            "id": 116,
+            "order": 42.0,
+            "description": "IGNITION SYSTEMS TEST",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 117,
+            "order": 43.0,
+            "description": "MAX CAÍDA CON UN SOLO IGNITOR 300 RPM",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 118,
+            "order": 44.0,
+            "description": "MAX DIFERENCIA ENTRE IGNITORES 120 RPM",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 119,
+            "order": 45.0,
+            "description": "FUEL SELECTOR VALVES (SELECTOR DE TANQUE)",
+            "action": "CHANGE",
+            "is_section": false
+          },
+          {
+            "id": 120,
+            "order": 46.0,
+            "description": "THROTTLE (ACELERADOR)",
+            "action": "2000-2500 RPM",
+            "is_section": false
+          },
+          {
+            "id": 121,
+            "order": 47.0,
+            "description": "FUEL QUANTITY (CANTIDAD DE COMBUSTIBLE)",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 122,
+            "order": 48.0,
+            "description": "FUEL PUMP (BOMBA DE COMBUSTIBLE)",
+            "action": "ON",
+            "is_section": false
+          },
+          {
+            "id": 123,
+            "order": 49.0,
+            "description": "FUEL SELECTOR VALVES FULL (SELECTOR DE TANQUES)",
+            "action": "MAS LLENO",
+            "is_section": false
+          },
+          {
+            "id": 124,
+            "order": 50.0,
+            "description": "FLAPS T/0-15",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 125,
+            "order": 51.0,
+            "description": "FLIGHT CONTROLS (CONTROLES DE VUELO)",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 126,
+            "order": 52.0,
+            "description": "TRIM CENTER",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 127,
+            "order": 53.0,
+            "description": "SEAT POSITION AND SAFETY BELTS ADJUST & FASTEN",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 128,
+            "order": 54.0,
+            "description": "CANOPY (CABINA) CLOSED",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 129,
+            "order": 55.0,
+            "description": "NAVIGATION LIGHTS (LUCES DE NAVEGACIÓN)",
+            "action": "ON",
+            "is_section": false
+          },
+          {
+            "id": 130,
+            "order": 56.0,
+            "description": "PARKING BRAKE (FRENO DE ESTACIONAMIENTO)",
+            "action": "RELEASE",
+            "is_section": false
+          },
+          {
+            "id": 131,
+            "order": 57.0,
+            "description": "TAXI (RODAJE)",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 132,
+            "order": 58.0,
+            "description": "BRAKES (FRENOS)",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 133,
+            "order": 59.0,
+            "description": "FLIGHT INSTRUMENTS (INSTRUMENTOS DE VUELO)",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 134,
+            "order": 60.0,
+            "description": "TRIM CENTER",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 135,
+            "order": 61.0,
+            "description": "SEAT POSITION AND SAFETY BELTS ADJUST & FASTEN",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 136,
+            "order": 62.0,
+            "description": "CANOPY (CABINA) CLOSED",
+            "action": "CHECK",
+            "is_section": false
+          },
+          {
+            "id": 137,
+            "order": 63.0,
+            "description": "NAVIGATION LIGHTS (LUCES DE NAVEGACIÓN)",
+            "action": "ON",
+            "is_section": false
+          },
+          {
+            "id": 138,
+            "order": 64.0,
+            "description": "PARKING BRAKE (FRENO DE ESTACIONAMIENTO)",
+            "action": "RELEASE",
+            "is_section": false
+          },
+          {
+            "id": 139,
+            "order": 64.0,
+            "description": "STROBE LIGHT (LUCES ESTROBOSCÓPICAS)",
+            "action": "Off",
+            "is_section": false
+          }
+        ]
+      }
+    ]
+  }
+  
