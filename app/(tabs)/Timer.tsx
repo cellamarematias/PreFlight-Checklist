@@ -4,21 +4,23 @@ import { useKeepAwake } from 'expo-keep-awake';
 
 export default function TimerScreen() {
   useKeepAwake();
-  // Estados para tiempo de vuelo e intervalo de cambio (en minutos)
+  
   const [flightTime, setFlightTime] = useState<number>(60);
   const [changeInterval, setChangeInterval] = useState<number>(20);
-  // Estado del timer en segundos
   const [timeLeft, setTimeLeft] = useState<number>(flightTime * 60);
   const [alarmTriggered, setAlarmTriggered] = useState<boolean>(false);
+  const [isRunning, setIsRunning] = useState<boolean>(false); // Nuevo estado para controlar el inicio del temporizador
 
-  // Cada vez que se modifique el tiempo de vuelo, reiniciamos el timer
+  // Reiniciar el tiempo si cambia el tiempo de vuelo
   useEffect(() => {
     setTimeLeft(flightTime * 60);
     setAlarmTriggered(false);
   }, [flightTime]);
 
-  // Timer que decrementa el contador cada segundo
+  // Control del temporizador
   useEffect(() => {
+    if (!isRunning) return; // Solo ejecutar si isRunning es true
+
     const timer = setInterval(() => {
       setTimeLeft(prev => {
         if (prev <= 0) {
@@ -28,21 +30,19 @@ export default function TimerScreen() {
         return prev - 1;
       });
     }, 1000);
-    return () => clearInterval(timer);
-  }, []);
 
-  // Calcula el tiempo en que debe dispararse la alarma
+    return () => clearInterval(timer);
+  }, [isRunning]);
+
+  // Alarma cuando se alcanza el umbral
   useEffect(() => {
-    // Alarm triggered when timeLeft equals (flightTime - changeInterval) minutes in seconds.
     const alarmThreshold = (flightTime - changeInterval) * 60;
     if (timeLeft === alarmThreshold && !alarmTriggered) {
       setAlarmTriggered(true);
-      // Puedes personalizar la alarma visual (por ejemplo, con un Alert o cambiando estilos)
       Alert.alert('Atención', '¡Es momento de cambiar de tanque de combustible!');
     }
   }, [timeLeft, flightTime, changeInterval, alarmTriggered]);
 
-  // Formateamos el tiempo (mm:ss)
   const formatTime = (seconds: number): string => {
     const m = Math.floor(seconds / 60);
     const s = seconds % 60;
@@ -50,24 +50,25 @@ export default function TimerScreen() {
   };
 
   return (
-    <ImageBackground
-                source={require('../../assets/images/fondo_avion.png')}
-                style={styles.background}
-                resizeMode="cover"
-            >
+    <ImageBackground source={require('../../assets/images/fondo_avion.png')} style={styles.background} resizeMode="cover">
       <View style={styles.container}>
-
-        {/* Botón para reiniciar el timer (opcional) */}
         <TouchableOpacity
           style={styles.button}
           onPress={() => {
             setTimeLeft(flightTime * 60);
             setAlarmTriggered(false);
+            setIsRunning(false); // Asegurar que no inicie automáticamente
           }}
         >
           <Text style={styles.buttonText}>Reiniciar Timer</Text>
         </TouchableOpacity>
 
+        <TouchableOpacity
+          style={[styles.button, { backgroundColor: isRunning ? '#ff4d4d' : '#4CAF50' }]}
+          onPress={() => setIsRunning(!isRunning)}
+        >
+          <Text style={styles.buttonText}>{isRunning ? 'Pausar Timer' : 'Iniciar Timer'}</Text>
+        </TouchableOpacity>
 
         <View style={styles.inputContainer}>
           <Text style={styles.label}>Tiempo de vuelo (min):</Text>
@@ -90,7 +91,6 @@ export default function TimerScreen() {
         <Text style={styles.timerText}>{formatTime(timeLeft)}</Text>
         {alarmTriggered && <Text style={styles.alarmText}>¡Cambiar el tanque!</Text>}
       </View>
-  
     </ImageBackground>
   );
 }
@@ -100,22 +100,13 @@ const styles = StyleSheet.create({
     flex: 1,
     width: '100%',
     height: '100%',
-},
-overlay: {
-    ...StyleSheet.absoluteFillObject,
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-},
+  },
   container: {
     flex: 1,
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
     justifyContent: 'center',
     alignItems: 'center',
     padding: 20,
-  },
-  title: {
-    fontSize: 24,
-    color: '#fff',
-    marginBottom: 20,
   },
   inputContainer: {
     flexDirection: 'column',
@@ -152,10 +143,11 @@ overlay: {
     paddingVertical: 10,
     paddingHorizontal: 20,
     borderRadius: 5,
-    marginBottom: 40,
+    marginBottom: 20,
   },
   buttonText: {
     color: '#25292e',
     fontWeight: 'bold',
   },
 });
+

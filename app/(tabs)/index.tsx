@@ -18,7 +18,7 @@ export default function Index() {
       style={styles.background}
       resizeMode="cover"
     >
-      <View style={styles.overlay} /> {/* Capa semitransparente */}
+      <View style={styles.overlay} />{/* Capa semitransparente */}
       <View style={styles.container}>
         {/* 📌 Logo arriba */}
         <View style={styles.logoContainer}>

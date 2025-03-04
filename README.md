@@ -1,6 +1,23 @@
-# Welcome to your Expo app 👋
+# Preflight Checklist App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Descripción
+
+La **Preflight Checklist App** es una aplicación móvil diseñada para ayudar a los pilotos a gestionar la lista de tareas previas al vuelo. La app permite seleccionar los aviones a volar y contar con un temporizador que indica el tiempo restante de vuelo y el intervalo para cambiar el tanque de combustible. Además, la app emite una alarma cuando es el momento de realizar el cambio de tanque de combustible, lo que ayuda a mantener la seguridad y eficiencia en los vuelos.
+
+## Características
+
+- **Selección de aviones**: Permite elegir entre diferentes aviones disponibles para el vuelo.
+- **Temporizador de vuelo**: Muestra un temporizador que cuenta las horas de vuelo, ajustable según el tiempo de vuelo estimado.
+- **Intervalo de cambio de tanque**: Establece el intervalo en minutos para recordar al piloto cuándo cambiar el tanque de combustible.
+- **Alarma de cambio de tanque**: La app emite una alarma cuando es el momento de realizar el cambio de tanque.
+- **Reinicio del temporizador**: Se puede reiniciar el temporizador de vuelo en cualquier momento.
+- **Interfaz intuitiva**: Diseño de interfaz sencilla y clara para un uso fácil y rápido durante el vuelo.
+
+![alt text](image.png)
+
+![alt text](image-1.png)
+
+![alt text](image-2.png)
 
 ## Get started
 
